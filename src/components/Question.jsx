@@ -9,6 +9,7 @@ export default function Question({
     answerState,
     onSkipAnswer
 }) {
+    
     return (
         <div id='question'>
             <QuestionTimer
