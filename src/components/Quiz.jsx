@@ -15,7 +15,6 @@ export default function Quiz() {
             setUsersAnswers((prevUserAnswers) => {
                 return [...prevUserAnswers, selectedAnswer];
             });
-
         },
         []
     );
@@ -34,6 +33,7 @@ export default function Quiz() {
         <div id='quiz'>
             <Question
                 key={activeQuestionIndex}
+                index={activeQuestionIndex}
                 onSelectAnswer={handleSelectAnswer}
                 onSkipAnswer={handleSkipAnswer}
             />
