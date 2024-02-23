@@ -1,7 +1,6 @@
 import quizComleteImg from '../assets/quiz-complete.png'
 import QUESTIONS from '../questions.js'
 
-
 export default function Summary({ userAnswers }) {
     const skippedAnswers = userAnswers.filter((answer) => answer === null);
     const correctAnswers = userAnswers.filter(
@@ -19,15 +18,15 @@ export default function Summary({ userAnswers }) {
             <div id='summary-stats'>
                 <p>
                     <span className='number'>{skippedAnswersShare}%</span>
-                    <span className='text'>skipped</span>
+                    <span className='text'>Skipped</span>
                 </p>
                 <p>
                     <span className='number'>{correctAnswersShare}%</span>
-                    <span className='text'>answered correctly</span>
+                    <span className='text'>Answered correctly</span>
                 </p>
                 <p>
                     <span className='number'>{wrongAnswersShare}%</span>
-                    <span className='text'>answered correctly</span>
+                    <span className='text'>Answered correctly</span>
                 </p>
             </div>
             <ol>
